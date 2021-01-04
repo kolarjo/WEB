@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap');
+body{
+	margin: 0;
+	padding: 0;
+	background-size: cover;
+	display: flex;
+    flex-direction: column;
+    min-width: 900px;
+    min-height: 500px;
+}
+html{
+	scroll-behavior: smooth;
+}
+.popup {font-family: 'Ubuntu', sans-serif;text-align: center; display: block; z-index: 999;}
+.popup li a{text-align: center;}
+.popup ul li ul li{text-align: center;}
+.popup li { float: right; text-align: center;}
+.popup li li {display: block; float: none; margin: 0;}
+.popup a {width: 200px; text-align: center; color: black;}
+.popup .show ul :hover{padding-right: 30px; transition: 0.6s;}
+.popup ul ul a {width: 100%; display: inline-block;}
+.popup ul li ul li a{ font-size: 27px;display: block; text-decoration: none;}
+/* submenu */
+.popup ul ul {display: none; position: absolute; top: 100%; width: 200px;}
+.popup li {position: relative; }
+.popup ul {padding: 0; margin: 0; list-style: none;}
+/* rozbalení */
+.popup .show a {color: black; text-align: center;}
+.popup .show li, li.show {background: white; text-align: center;}
+.popup .show ul {display: block; text-align: center;}
+
+.menu1 {font-family: 'Ubuntu', sans-serif;text-align: center; display: block;transition: 0.6s;}
+
+/* submenu */
+.menu1 ul ul {display: none; position: absolute; top: 100%; left: -1px; width: 200px;}
+.menu1 li {position: absolute; }
+.menu1 ul {padding: 0; margin: 0; list-style: none;}
+/* rozbalení */
+.menu1 .show a {background: rgba(0, 0, 10, 0.95); color: white; text-align: center;}
+.menu1 .show li, li.show {background: white; color: black; text-align: center;}
+.menu1 .show ul {display: block; text-align: center; }
+
+#navbar li.eco { 
+text-align: right;		
+}
+.onclick{
+	transition: 0.6s;
+}
+
+#menu{
+	height: 50px;
+	position: absolute;
+	float: center;
+	width:100%;
+	z-index: 999;
+	min-width: 410px;
+	transition: 0.6s;
+}
+
+#navbar {
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	border: 0px solid;
+	text-align: center;
+}
+
+#LOGO{
+	height: 100px;
+	margin-left: 30px;
+	margin-top: 10px;
+	float: left;
+	box-sizing: border-box;
+	max-width: 150px;
+}
+
+#LOGO:hover {
+	transition: 0.6s;
+	visibility: none;
+	height: 150px;
+	
+}
+
+
+#navbar ul li a {
+	text-decoration: none;
+	color: black;
+	font-family:'Ubuntu', sans-serif;
+	display: block;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	text-align: center;
+	
+}
+#navbar ul li :hover {
+	background-color: black;
+	height: 50px;
+	transition: 0.6s;
+	padding-left: 20px;
+}
+#navbar ul li  a:hover {
+	color: white;
+}
+#navbar ul{
+	display: block;
+	list-style-type: none;
+	height: 50%;
+	margin: 0%;
+	padding: 0%;
+	}
+#navbar li{
+	display: inline-block;
+	width: 12%;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 20px;
+	margin: 0px 0px 0px;
+	float: center;
+	color: white;
+	text-align: center;
+
+}
+
+#navbar2 {
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	border: 0px solid;
+	text-align: right;
+}
+
+#navbar2 ul li a {
+	text-decoration: none;
+	color: black;
+	font-family:'Ubuntu', sans-serif;
+	display: block;
+	line-height: 70px;
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	text-align: center;
+	
+}
+#navbar2 ul li ul :hover {
+	background-color: black;
+	transition: 0.6s;
+}
+#navbar2 ul li ul a:hover {
+	color: white;
+}
+#navbar2 ul{
+	list-style-type: none;
+	height: 50%;
+	margin: 0%;
+	padding: 0%;
+	}
+#navbar2 li{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 20px;
+	margin: 0px 0px 0px;
+	float: center;
+	color: white;
+	text-align: center;
+	transition: 0.6s;
+}
+
+#navbar3 {
+	width: 100%;
+	height: 50px;
+	position: sticky;
+	top: 0;
+	background-color: white;
+	left: 0;
+	z-index: 990;
+	margin-top: 0px;
+	text-align: center;
+	box-sizing: border-box;
+	align-items: center;
+	border-bottom: 2px solid;
+	border-color: gray;
+}
+#navbar3 ul li a {
+	text-decoration: none;
+	color: black;
+	font-family:'Ubuntu', sans-serif;
+	display: block;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	text-align: center;
+	
+}
+#navbar3 ul li :hover {
+	background-color: black;
+	height: 50px;
+	transition: 0.6s;
+	padding-left: 15px;
+}
+#navbar3 ul li  a:hover {
+	color: white;
+}
+#navbar3 ul{
+	display: block;
+	list-style-type: none;
+	height: 50%;
+	margin: 0%;
+	padding: 0%;
+	}
+#navbar3 li{
+	display: inline-block;
+	width: 14%;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 20px;
+	margin-right: 0px;
+	float: center;
+	color: black;
+	text-align: center;
+
+}
+
+#LOGO3{
+	height: 50px;
+	margin-left: 0px;
+	margin-top: -15px;
+	float: left;
+	box-sizing: border-box;
+	max-width: 150px;
+}
+
+#LOGO3:hover {
+	transition: 0.6s;
+	visibility: none;
+	height: 60px;
+	
+}
+
+#obrmenu {
+    max-width: 150px;
+    margin-top: 10px;
+}
+#obrmenu:hover {
+    max-width: 160px;
+    margin-top: 20px;
+    transition: 0.6s;
+}
+
+.jmeno {
+    width:90%;
+    margin-top: 7%;
+    box-shadow: 0 5px 25px rgba(0,0,0,.5);
+    margin-left: 5%;
+}
+.jmeno:hover {
+    transition-duration: 0.5s;
+}
+.youtube {
+    float: center;
+    text-align: center;
+    width: 90%;
+    height: 400px;
+    margin-top: 4%;
+    margin-left: 5%;
+    box-shadow: 0 5px 25px rgba(0,0,0,.5);
+}
+
+
+.index{
+	background-color: white;
+	margin-top: 50px;
+	font-family: 'Ubuntu', sans-serif;
+	background: url(./background.jpg) center top no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	box-sizing: border-box;
+	min-height: 700px;
+	min-width: 750px;
+}
+.h1{
+	font-family: 'Ubuntu', sans-serif, Arial;
+	font-size: 80px;
+	margin-top: 50px;
+	width: 50%;
+	float: left;
+	min-width: 250px;
+	box-sizing: border-box;
+	background-size: cover;
+}
+
+.tělo{
+	z-index: 998;
+	width: 90%;
+	min-height: 2200px;
+	min-width: 600px;
+	background-color: rgba(255, 255, 255, 1);
+	font-family: 'Ubuntu', sans-serif, Arial;
+	margin: -200px auto;
+	padding: 1em;
+	box-shadow:
+	   0 1px 4px rgba(0, 0, 0, .3),
+	   -23px 0 20px -23px rgba(0, 0, 0, .8),
+	   23px 0 20px -23px rgba(0, 0, 0, .8),
+	   0 0 40px rgba(0, 0, 0, .1) inset;
+	border-top-left-radius: 55px;
+    border-bottom-right-radius: 55px;
+    border-top-right-radius: 55px;
+    border-bottom-left-radius: 55px;
+    box-sizing: border-box;
+    float: left;
+
+}
+
+.první{
+	height: 100%;
+	z-index: 999;
+	height: 200px;
+	background: url(./tema1.jpg) center top no-repeat #000;
+	border-top-left-radius: 55px;
+    border-top-right-radius: 55px;
+    background-size: auto 100%;
+    background-attachment: relative;
+}
+
+#sipka{
+	max-height: 75px;
+	position: sticky;
+	top: 650px;
+	left: 0px;
+	float: left;
+	z-index: 999;
+}
+
+#sipka :hover{
+	max-height: 100px;
+	float: left;
+	opacity: 0.8;
+	margin-bottom: 50px;
+	color: black;
+	transition: 0.6s;
+}
+
+#p1{
+	text-align: center;
+	font-size: 25px;
+}
+#p2{
+	margin-left: 60px;
+	margin-right: 60px;
+	text-align: left;
+	font-size: 18px;
+	margin-top: 10px;
+
+}
+
+.prvnitxt{
+	width: 100%;
+	margin-top: 10px;
+	min-height: 800px;
+}
+#foto{
+	max-height: 300px;
+	border-radius: 10%;
+	float:left;
+	margin-right: 15px;
+	box-sizing: border-box;
+}
+
+#text{
+	width: 50%;
+	float: left;
+}
+#ukoly{
+	width: 50%;
+	float: right;
+}
+.druhy{
+	width: 100%;
+	height: 200px;
+	background: url(./2rocnik.jpg) center top no-repeat #000;
+    background-size: auto 100%;
+    background-attachment: absolute;
+}
+.druhytxt{
+	width: 100%;
+	margin-top: 10px;
+	min-height: 500px;
+}
+.treti{
+	height: 100%;
+	z-index: 999;
+	height: 200px;
+	background: url(./3rocnik.jpg) center top no-repeat #000;
+    background-size: auto 100%;
+    background-attachment: relative;
+}
+.tretitxt{
+	width: 100%;
+	margin-top: 10px;
+	min-height: 500px;
+}
+.ctvrty{
+	height: 100%;
+	z-index: 999;
+	height: 200px;
+	background: url(./4rocnik.jpg) center top no-repeat #000;
+    background-size: auto 100%;
+    background-attachment: relative;
+}
+.ctvrtytxt{
+	width: 100%;
+	margin-top: 10px;
+	min-height: 500px;
+}
+.paty{
+	height: 100%;
+	z-index: 999;
+	height: 200px;
+	background: url(./konzultace.jpg) center top no-repeat #000;
+    background-size: auto 100%;
+    background-attachment: relative;
+}
+.patytxt{
+	width: 100%;
+	margin-top: 10px;
+	min-height: 500px;
+}
+.sesty{
+	height: 100%;
+	z-index: 999;
+	height: 200px;
+	background: url(./telocvik.jpg) center top no-repeat #000;
+    background-size: auto 100%;
+    background-attachment: relative;
+}
+.sestytxt{
+	width: 100%;
+	margin-top: 10px;
+	min-height: 500px;
+}
+.sedmy{
+	height: 100%;
+	z-index: 999;
+	height: 600px;
+}
+
+#copyright{
+	
+	text-align: center;
+	height: 40px;
+	font-family: 'Ubuntu', sans-serif, Arial;
+	color: black;
+}
+
+
+
+
+
+@media screen and (min-width: 1350px) and (max-width: 3000px){
+
+		#navbar2{ display: none; }
+}
+
+
+@media screen and (min-width: 1px) and (max-width: 1349px){
+
+		#navbar #menu1{ display: none; }
+		.index{ margin-top: 0px; }
+		.jmeno {
+	    	margin-top: 10%;
+	    	margin-right: 5%;
+	    	width: 80%;
+		}
+		.youtube {
+	    	margin-top: 2%;
+	    	margin-right: 5%;
+	    	margin-bottom: 20%;
+	    	width: 80%;
+		}
+		.h1{
+			text-align: center;
+			margin-left: 0%;
+			width: 100%;
+		}
+		#navbar3 li{
+			font-size: 17px;
+		}
+		#p2{
+			font-size: 17px;
+		}
+		#text{
+			width: 100%;
+		}
+		#ukoly{
+			width: 100%;
+		}
+		.prvnitxt {
+			min-height: 1200px;
+		}
+
+}
+
+@media screen and (min-width: 780px) and (max-width: 1150px){
+
+		
+		.h1{ font-size: 60px;}
+		#h1_1{ font-size: 40px;}
+		#h2{font-size: 30px;}
+
+}
+@media screen and (min-width: 1px) and (max-width: 779px){
+
+		
+		.h1{ font-size: 40px;}
+		#h1_1{ font-size: 30px;}
+		#h2{font-size: 20px;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
